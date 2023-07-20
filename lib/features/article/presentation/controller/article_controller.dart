@@ -35,6 +35,6 @@ class ArticleController extends GetxController with StateMixin<List<Article>>, B
         update();
       }
     });
-    print(articles);
+    
   }
 }

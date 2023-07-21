@@ -1,16 +1,83 @@
-# ny_times_generic_demo
+## NY Times Generic Demo
+<img src="https://raw.githubusercontent.com/coch82/ny_times_generic_demo_getx/main/images/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20Max%20-%202023-07-21%20at%2002.05.21.png" width="430" height="932" />
+<img src="https://raw.githubusercontent.com/coch82/ny_times_generic_demo_getx/main/images/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20Max%20-%202023-07-21%20at%2002.05.58.png" width="430" height="932" />
+<img src="https://raw.githubusercontent.com/coch82/ny_times_generic_demo_getx/main/images/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20Max%20-%202023-07-21%20at%2002.06.24.png" width="430" height="932" />
 
-A new Flutter project.
 
-## Getting Started
+## About
 
-This project is a starting point for a Flutter application.
+A Flutter app showcasing a list of popular articles from [**New York Times**](https://www.nytimes.com).
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Features
+
+
+
+
+
+## Folder structure
+
+```
+├── lib
+│   │     
+│   ├── common 
+│   │   ├── controller
+│   │   │  │   ├── base_controller.dart
+│   │   ├── network
+│   │   │  │   ├── api_base.dart
+│   │   │  │   ├── api_config.dart
+│   │   │  │   ├── dio_client.dart
+│   │   │  │   ├── dio_exception.dart
+│   │   │  │   ├── dio_interceptor.dart
+│   │   ├── repository
+│   │   │  │   ├── repository_helper.dart
+│   │   ├── usecase
+│   │   │  │   ├── usecase.dart
+│   │   │   
+│   ├── core
+│   │   ├── app_extension.dart
+│   │   ├── app_string.dart
+│   │   ├── app_style.dart
+│   │   ├── app_theme.dart
+│   │   │   
+│   ├── features
+│   │   └── articles
+│   │       ├── data
+│   │       │   ├── datasources
+│   │       │   │   └── articles_datasource.dart
+│   │       │   ├── models
+│   │       │   │   └── article.dart
+│   │       │   └── repositories
+│   │       │       └── article_repository.dart
+│   │       ├── domain
+│   │       │   ├── repositories
+│   │       │   │   └── i_article_repository.dart
+│   │       │   └── usescases
+│   │       │       └── get_all_articles.dart
+│   │       │
+│   │       └── presentation
+│   │           ├── view
+│   │           │   └── pages
+│   │           │       ├── articles_page.dart
+│   │           │       ├── article_detail_page.dart
+│   │           │       ├──intro_screen.dart
+│   │           │       └── widgets
+│   │           │           ├── list_articles.dart
+│   │           │           └── article_card.dart
+│   │           └── controller
+│   │               └── article_controller.dart
+│   │
+│   └── di.dart
+│   └── main.dart
+├── pubspec.lock
+└── pubspec.yaml
+```
+
+
+
+
+
+
+

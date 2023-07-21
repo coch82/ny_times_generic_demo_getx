@@ -34,7 +34,7 @@ A Flutter app showcasing a list of popular articles from [**New York Times**](ht
 │   │   ├── repository
 │   │   │  │   ├── repository_helper.dart
 │   │   ├── usecase
-│   │   │  │   ├── usecase.dart
+│   │   │      └── usecase.dart
 │   │   │   
 │   ├── core
 │   │   ├── app_extension.dart
@@ -43,26 +43,30 @@ A Flutter app showcasing a list of popular articles from [**New York Times**](ht
 │   │   ├── app_theme.dart
 │   │   │   
 │   ├── features
-│   │   └── articles
+│   │   └── article
 │   │       ├── data
 │   │       │   ├── datasources
-│   │       │   │   └── articles_datasource.dart
+│   │       │   │   └── article_remote_data_source.dart
 │   │       │   ├── models
 │   │       │   │   └── article.dart
+│   │       │   │   └── article.freezed.dart
+│   │       │   │   └── article.g.dart
 │   │       │   └── repositories
-│   │       │       └── article_repository.dart
+│   │       │       └── article_repository_impl.dart
 │   │       ├── domain
+│   │       │   ├── entities
+│   │       │   │   └── article_entity.dart
 │   │       │   ├── repositories
-│   │       │   │   └── i_article_repository.dart
+│   │       │   │   └── article_repository.dart
 │   │       │   └── usescases
-│   │       │       └── get_all_articles.dart
+│   │       │       └── get_articles_usecase.dart
 │   │       │
 │   │       └── presentation
 │   │           ├── view
 │   │           │   └── pages
 │   │           │       ├── articles_page.dart
 │   │           │       ├── article_detail_page.dart
-│   │           │       ├──intro_screen.dart
+│   │           │       ├── intro_screen.dart
 │   │           │       └── widgets
 │   │           │           ├── list_articles.dart
 │   │           │           └── article_card.dart
